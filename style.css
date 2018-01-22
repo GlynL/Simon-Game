@@ -1,0 +1,113 @@
+body {
+  background: rgb(2, 27, 65);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#game-box {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+}
+
+.colour {
+  float: left;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  opacity: 0.6;
+  z-index: 0;
+  box-shadow: 0 0 1px 1px black;
+}
+
+#red {
+  background: rgb(255, 0, 0);
+  border-radius: 100% 0 0 0;
+}
+
+#blue {
+  background: rgb(0, 0, 255);
+  border-radius: 0 100% 0 0;
+}
+
+#green {
+  background: rgb(0, 128, 0);
+  border-radius: 0 0 0 100%;
+}
+
+#yellow {
+  background: rgb(255, 255, 0);
+  border-radius: 0 0 100% 0;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.wrong {
+  background: rgb(255, 0, 0) !important;
+  opacity: 1 !important;
+}
+
+.correct {
+  background: rgb(0, 128, 0) !important;
+  opacity: 1 !important;
+}
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 65px;
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  z-index: 1;
+  padding-top: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#info-text {
+  text-decoration: underline;
+}
+
+#info-btns {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+}
+
+button {
+  text-decoration: none;
+  border-radius: 3px;
+  background: rgb(59, 137, 201);
+  border: 1px solid rgb(53, 127, 223);
+  color: white;
+  font-size: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.spin {
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
