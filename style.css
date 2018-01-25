@@ -1,10 +1,12 @@
 body {
   background: rgb(2, 27, 65);
+  font-family: "Raleway", sans-serif;
 }
 
 h1 {
   text-align: center;
   color: white;
+  text-shadow: 1px 1px 2px rgb(179, 177, 177);
 }
 
 #game-box {
@@ -93,6 +95,17 @@ button {
   border: 1px solid rgb(53, 127, 223);
   color: white;
   font-size: 1em;
+  font-family: inherit;
+}
+
+button:hover {
+  color: rgb(59, 137, 201);
+  background: white;
+}
+
+button:active {
+  background: rgb(152, 206, 224);
+  color: white;
 }
 
 .hide {
